@@ -2,6 +2,7 @@
 
 Терминал
 ---
+![image](https://github.com/marythedev/.config/assets/79389256/21817e92-9b7c-4360-b027-69ee160c5bba)
 1. Установка [Chocolatey](https://chocolatey.org/install) - в Powershell выполняем команду (от администратора)
     ```
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
