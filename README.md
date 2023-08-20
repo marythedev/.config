@@ -14,24 +14,24 @@
 
 3. Настройка Powershell для автоматического запуска Starship
    1. Открываем файл `Microsoft.PowerShell_profile.ps1` в VSCode
-    ```
-    code $profile
-    ```
+      ```
+      code $profile
+      ```
    2. В файл пишем и сохраняем
-   ```
-   Invoke-Expression (&starship init powershell)
-   ```
+      ```
+      Invoke-Expression (&starship init powershell)
+      ```
    3. Если выпадет [ошибка "выполнение сценариев отключено в этой системе"](https://ru.stackoverflow.com/questions/935212/powershell-выполнение-сценариев-отключено-в-этой-системе), в Powershell (от администратора) выполняем команду 
-   ```
-   Set-ExecutionPolicy RemoteSigned
-   ```
+      ```
+      Set-ExecutionPolicy RemoteSigned
+      ```
 
 4. Настройка Starship
    1. [Создаем starship.toml](https://dev.to/ganmahmud/take-your-windows-powershell-to-the-next-level-by-starship-2gb2)
-   ```
-   New-Item -ItemType Directory -Force ~/.config;New-Item -ItemType file ~/.config/starship.toml;
-   ```
-   2. В созданный файл добавляем конфигурации из файла starship.toml из [этой репозитории](https://github.com/marythedev/.config)<br>
+      ```
+      New-Item -ItemType Directory -Force ~/.config;New-Item -ItemType file ~/.config/starship.toml;
+      ```
+   2. В созданный файл добавляем конфигурации из файла [starship.toml из этой репозитории](starship.toml).<br>
        Ссылки на иные конфигурационные опции:
        - https://starship.rs/config/
        - https://starship.rs/presets/
