@@ -35,7 +35,7 @@
        Ссылки на иные конфигурационные опции:
        - https://starship.rs/config/
        - https://starship.rs/presets/
-  3. Если терминал не показывает эмодзи/иконки (https://starship.rs/faq/#why-don-t-i-see-a-glyph-symbol-in-my-prompt), скорее всего нужно установить/указать правильные шрифт "Nerd Font"
+  3. Если терминал не показывает эмодзи/иконки (https://starship.rs/faq/#why-don-t-i-see-a-glyph-symbol-in-my-prompt), скорее всего нужно установить/указать правильный шрифт "Nerd Font"
      1. Устанавливаем шрифт (команды для некоторых шрифтов, которые использую я)
         - ComicShannsMono Nerd Font
            ```
@@ -50,3 +50,9 @@
            choco install nerd-fonts-monofur
            ```
         - Остальные возможные шрифты можно найти здесь: https://github.com/ryanoasis/nerd-fonts/#option-7-unofficial-chocolatey-or-scoop-repositories
+
+     2. Открываем setting.json (в VSCode: `View` -> `Command Palette` -> `>Preferences: Open User Settings (JSON)`) и указываем шрифт
+          ```
+          "terminal.integrated.fontFamily": "Monofur Nerd Font"
+          ```
+          Если шрифт не отображается, то скорее всего нужно добавить "Mono", как в случае с Hack - не "Hack Nerd Font", а "Hack Nerd Font Mono" (https://github.com/microsoft/vscode/issues/81497)
